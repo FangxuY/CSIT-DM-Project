@@ -1,5 +1,5 @@
 #  HKUST CSIT5210 Group 4 Project  
-## Group Member: Yuan Fangxu, Guo Yuchen, Lin Lirong, Long Yuepeng, Lei Lijun
+Group Member: Yuan Fangxu, Guo Yuchen, Lin Lirong, Long Yuepeng, Lei Lijun
 
 
  VAERS Data were compressed in vaers.rar 
