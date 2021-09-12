@@ -1,6 +1,7 @@
 # Code
  HKUST CSIT5210 Group 4 Project  
  
+ 
  VAERS Data were compressed in vaers.rar 
  
  Total vaccination data in US can be accessed from https://ourworldindata.org/covid-vaccinations#source-information-country-by-country
