@@ -1,5 +1,5 @@
-# CS229-final-project
- Stanford CS229 Spring 2021 final project  
+# Code
+ HKUST CSIT5210 Group 4 Project  
  
  VAERS Data were compressed in vaers.rar 
  
