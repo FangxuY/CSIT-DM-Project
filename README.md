@@ -24,7 +24,7 @@ Final Report
 
 实验代码：
 632396 cases
-1. Hospitalisation Prediction
+1. Hospitalisation Prediction Yuan
 * Sparse Naive Bayes
 * Linear Discriminant Analysis (LDA)
 * Locally linear embedding (LLE)
@@ -33,7 +33,7 @@ Final Report
 * Plain Bayes classifier + Laplace smoothing (existed)
 * (Singular Value Decomposition)SVD
 
-Evaluation Criteria： yuan
+Evaluation Criteria： 
 * Optimal probability threshold 
 * AUC 
 * Training set sensitivity 
@@ -41,7 +41,7 @@ Evaluation Criteria： yuan
 * Validation set sensitivity 
 * Validation set specificity
 
-2. Onset Time Prediction   long
+2. Onset Time Prediction   Long
 Random Forest(RF)
 Regularized regression(LASSO, RIDGE)
 Artificial neural network
