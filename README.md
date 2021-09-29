@@ -24,7 +24,7 @@ Final Report
 
 实验代码：
 632396 cases
-1. Hospitalisation Prediction Yuan
+1. Hospitalisation Prediction  Yuan
 * Sparse Naive Bayes
 * Linear Discriminant Analysis (LDA)
 * Locally linear embedding (LLE)
@@ -44,10 +44,10 @@ Evaluation Criteria：
 2. Onset Time Prediction   Long
 
 
-Random Forest(RF)
-Regularized regression(LASSO, RIDGE)
-Artificial neural network
-OLS
+* Random Forest(RF)
+* Regularized regression(LASSO, RIDGE)
+* Artificial neural network
+* OLS
 
 Evaluation Criteria：
 * TrainingMSE
