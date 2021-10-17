@@ -2,8 +2,6 @@
 Group Member: Yuan Fangxu, Guo Yuchen, Lin Lirong, Long Yuepeng, Lei Lijun
 
 
- VAERS Data were compressed in vaers.rar 
- 
  Total vaccination data in US can be accessed from https://ourworldindata.org/covid-vaccinations#source-information-country-by-country
  
  Data pre-processing, description, and goal 1 can be found in R code. Goal 2 can be found in python code. 
@@ -23,7 +21,7 @@ Final Report
 
 
 实验代码：
-632396 cases
+336485 cases Date from 2021.1.1 to 2021.4.20
 1. Hospitalisation Prediction  Yuan
 * Sparse Naive Bayes
 * Linear Discriminant Analysis (LDA)
