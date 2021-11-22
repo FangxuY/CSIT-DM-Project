@@ -9,18 +9,14 @@ import operator
 import numpy as np
 import matplotlib.pyplot as plt
 
-
-def judgeLevel(df, str):
-    if df[str].find(str):
-        return 1
-    else:
-        return 0
-
 # ---------------- read in dataset---------------------------------
 
-VAERSDATA21 = pd.read_csv('./2021VAERSDATA.csv', encoding='utf-8', low_memory=False)
-VAERSVAX21 = pd.read_csv('./2021VAERSVAX.csv', encoding='utf-8', low_memory=False)
-VAERSSYMPTOMS21 = pd.read_csv('./2021VAERSSYMPTOMS.csv', encoding='utf-8', low_memory=False)
+with open('2021VAERSDATA.csv', encoding='utf-8', errors='ignore') as f:
+    VAERSDATA21 = pd.read_csv(f, low_memory=False)
+with open('2021VAERSVAX.csv', encoding='utf-8', errors='ignore') as f:
+    VAERSVAX21 = pd.read_csv(f, low_memory=False)
+with open('2021VAERSSYMPTOMS.csv', encoding='utf-8', errors='ignore') as f:
+    VAERSSYMPTOMS21 = pd.read_csv(f, low_memory=False)
 
 VAERSVAX21 = VAERSVAX21.loc[VAERSVAX21['VAX_TYPE'] == 'COVID19']
 
@@ -58,11 +54,11 @@ data21.loc[data21['VAX_MANU'] == "MODERNA", 'VAX_MANU'] = 0
 data21.loc[data21['VAX_MANU'] == "PFIZER\\BIONTECH", 'VAX_MANU'] = 2
 data21.loc[data21['VAX_MANU'] == "JANSSEN", 'VAX_MANU'] = 3
 data21.rename(columns={'VAX_MANU': 'manu'}, inplace=True)
-data21['AGE_YRS'].astype("int")
+data21['AGE_YRS'].astype('int')
 
 # manipulate date variable
 # 1. onset date and imputation
-date_before = datetime.date(2020, 1, 1)
+date_before = datetime.date(2021, 1, 1)
 data21['ONSET_DATE'] = pd.to_datetime(data21['ONSET_DATE']).dt.date
 data21.rename(columns={'ONSET_DATE': 'date'}, inplace=True)
 data21 = data21.drop(data21[data21['date'] < date_before].index)
@@ -158,8 +154,12 @@ for index, row in data21.iterrows():
         data21.at[index, 'AF'] = 1
 
 data21 = data21.drop(data21[data21['NUMDAYS'] > 50].index)
+
+# Reduce size (end date will be around April 20th)
+data21 = data21[:336486]
+
 # clean = data21[['NOC', 'region', 'notes', 'Avg_age', 'Medal', 'Gold', 'Athletes']]
-data21.to_csv('./data21.csv', index=False)
+data21.to_csv('./data21_2.csv', index=False)
 # fds = fds.loc[fds['Age'].notna()]
 #
 # # select female or male athletes
@@ -191,4 +191,3 @@ data21.to_csv('./data21.csv', index=False)
 # clean = clean[['NOC', 'region', 'notes', 'Avg_age', 'Medal', 'Gold', 'Athletes']]
 #
 # clean.to_csv('./data_male.csv', index=False)
-
