@@ -14,22 +14,22 @@ Group Member: Yuan Fangxu, Guo Yuchen, Lin Lirong, Long Yuepeng, Lei Lijun
  Use the `visual_1.ipynb` to do the Proportion of three types of vaccination work.
 
 ## Final Report
-1. Background  Lei
-2. Introduction  Guo
-3. Framework Lin
-4. Hospital Prediction   Yuan
-5. Onset Time Prediction   Long
-6. Evaluation  Yuan, Long
-7. Case Study  Yuan
-8. Related Work  Lei
-9. Discussion  Lin
-10. Conclusion  Guo
-11. Acknowledgement  
+1. Background  **Lei**
+2. Introduction  **Guo**
+3. Framework **Lin**
+4. Hospital Prediction   **Yuan**
+5. Onset Time Prediction   **Long**
+6. Evaluation  **Yuan, Long**
+7. Case Study  **Yuan, Long**
+8. Related Work  **Lei**
+9. Discussion  **Lin**
+10. Conclusion  **Guo**
+11. Acknowledgement  **Yuan**
 
 
 ## CODE
 336485 cases Date from 2021.1.1 to 2021.4.20
-1. Hospitalisation Prediction  Yuan
+1. Hospitalisation Prediction  **Yuan**
 * Sparse Naive Bayes
 * Sparse Principal Component Analysis(PLA)+ logistic regression
 
@@ -42,7 +42,7 @@ Evaluation Criteria：
 * Validation set sensitivity 
 * Validation set specificity
 
-2. Onset Time Prediction   Long
+2. Onset Time Prediction   **Long**
 
 
 * Random Forest(RF)
@@ -57,9 +57,9 @@ Evaluation Criteria：
 * Best predictors for longer duration
 
 3. Data visualisation
-* Proportion of three types of vaccination  Lei
-* Real Data Set Illness top-15   Guo
-* Real data set length of stay  Lin
+* Proportion of three types of vaccination  **Lei**
+* Real Data Set Illness top-15  **Guo**
+* Real data set length of stay  **Lin**
 
 
 
