@@ -5,8 +5,11 @@ Group Member: Yuan Fangxu, Guo Yuchen, Lin Lirong, Long Yuepeng, Lei Lijun
  Total vaccination data in US can be accessed from https://ourworldindata.org/covid-vaccinations#source-information-country-by-country
  
  Data pre-processing, description, goal 1 and goal 2 can be found in python code. 
+ 
+ use data_cleaning.py to process [`2021VAERVAX.csv`](https://drive.google.com/file/d/1kcn6AVNoTtL-YYKk-lPNb1swMhxtpjcu/view?usp=sharing), `2021VAERSYMPTOMS.csv` and `2021VEARSDATA` to get the `data21.csv` .
+ data21.csv is the dataset we used in the tuo
 
-Final Report
+## Final Report
 1. Background  Lei
 2. Introduction  Guo
 3. Framework Lin
@@ -20,16 +23,12 @@ Final Report
 11. Acknowledgement  
 
 
-实验代码：
+## CODE
 336485 cases Date from 2021.1.1 to 2021.4.20
 1. Hospitalisation Prediction  Yuan
 * Sparse Naive Bayes
-* Linear Discriminant Analysis (LDA)
-* Locally linear embedding (LLE)
-* Laplacian Eigenmaps
 * Sparse Principal Component Analysis(PLA)+ logistic regression(existed)
-* Plain Bayes classifier + Laplace smoothing (existed)
-* (Singular Value Decomposition)SVD
+
 
 Evaluation Criteria： 
 * Optimal probability threshold 
@@ -58,12 +57,5 @@ Evaluation Criteria：
 * 真实数据集病症top-15   Guo
 * 真实数据集住院时间  Lin
 
-数据：
-date_vax 接种时间 
-Date 发病时间
-dur 
-Allergic - AF 既往病史
-SYMPTOM1-5 病症
-manu： MODERNA = 0, PFIZER\BIONTECH = 2, JANSSEN = 3
 
 
