@@ -7,7 +7,7 @@ Group Member: Yuan Fangxu, Guo Yuchen, Lin Lirong, Long Yuepeng, Lei Lijun
  Data pre-processing, description, goal 1 and goal 2 can be found in python code. 
  
  use data_cleaning.py to process [`2021VAERVAX.csv`](https://drive.google.com/file/d/1kcn6AVNoTtL-YYKk-lPNb1swMhxtpjcu/view?usp=sharing), [`2021VAERSYMPTOMS.csv`](https://drive.google.com/file/d/19o8ZtypcwSxIqTrQubD0ytvEjEMa0h-8/view?usp=sharing) and [`2021VEARSDATA`](https://drive.google.com/file/d/1IgXQzZPh-T-eFVPnkdBtAXB5knUtWwQv/view?usp=sharing) to get the [`data21.csv`](https://drive.google.com/file/d/1FOwvFU2brieaotQEIOgEKq7CgKKV1eAN/view?usp=sharing) .
- data21.csv is the dataset we used in the two assignments.
+ `data21.csv` is the dataset we used in the two assignments.
  Use the `SparsePCA1.ipynb` to do the Hospitalisation Prediction work.
  Use the `OnsetPrediction.ipynb` to do the Onset Time Prediction work.
  Use the `visual_1.ipynb` to do the Real Data Set Illness top-15 and Real data set length of stay work.
